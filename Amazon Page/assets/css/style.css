@@ -51,6 +51,8 @@ main .gift {
   height: 12.3rem;
   text-align: center;
   margin-top: 35px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 main .gift h1 {
