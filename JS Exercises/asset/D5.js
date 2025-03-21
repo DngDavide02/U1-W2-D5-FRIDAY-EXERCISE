@@ -117,6 +117,13 @@ for (i = 0; i < cars.length; i++) {
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
+let index = 0;
+let newNumArray = [];
+while (numericArray[index] !== 32 && index < numericArray.length) {
+  newNumArray.push(numericArray[index]);
+  index++;
+}
+console.log(newNumArray);
 
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
@@ -124,3 +131,114 @@ const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"];
+const alphabet = "abcdefghijklmnopqrstuvwxyz";
+let alfabetPosition = [];
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "a":
+      alfabetPosition.push(1);
+      break;
+
+    case "b":
+      alfabetPosition.push(2);
+      break;
+
+    case "c":
+      alfabetPosition.push(3);
+      break;
+
+    case "d":
+      alfabetPosition.push(4);
+      break;
+
+    case "e":
+      alfabetPosition.push(5);
+      break;
+
+    case "f":
+      alfabetPosition.push(6);
+      break;
+
+    case "g":
+      alfabetPosition.push(7);
+      break;
+
+    case "h":
+      alfabetPosition.push(8);
+      break;
+
+    case "i":
+      alfabetPosition.push(9);
+      break;
+
+    case "j":
+      alfabetPosition.push(10);
+      break;
+
+    case "k":
+      alfabetPosition.push(11);
+      break;
+
+    case "l":
+      alfabetPosition.push(12);
+      break;
+
+    case "m":
+      alfabetPosition.push(13);
+      break;
+
+    case "n":
+      alfabetPosition.push(14);
+      break;
+
+    case "o":
+      alfabetPosition.push(15);
+      break;
+
+    case "p":
+      alfabetPosition.push(16);
+      break;
+
+    case "q":
+      alfabetPosition.push(17);
+      break;
+
+    case "r":
+      alfabetPosition.push(18);
+      break;
+
+    case "s":
+      alfabetPosition.push(19);
+      break;
+
+    case "t":
+      alfabetPosition.push(20);
+      break;
+
+    case "u":
+      alfabetPosition.push(21);
+      break;
+
+    case "v":
+      alfabetPosition.push(22);
+      break;
+
+    case "w":
+      alfabetPosition.push(23);
+      break;
+
+    case "x":
+      alfabetPosition.push(24);
+      break;
+
+    case "y":
+      alfabetPosition.push(25);
+      break;
+
+    case "z":
+      alfabetPosition.push(26);
+      break;
+  }
+}
+
+console.log(alfabetPosition);
